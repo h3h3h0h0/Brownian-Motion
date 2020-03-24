@@ -84,11 +84,11 @@ public class Simulation extends JFrame{
         xh = x;
         yh = y;
 
-        if(b > a) x--;
-        if(b < a) x++;
+        if(b > a && x >= 0) x--;
+        if(b < a && x <= 500) x++;
 
-        if(d > c) y--;
-        if(d < c) y++;
+        if(d > c && y >= 0) y--;
+        if(d < c && y <= 500) y++;
 
     }
 
